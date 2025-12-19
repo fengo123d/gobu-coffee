@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOBU Coffee - Produk</title>
+
+    <!-- Import Font dari Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- File CSS Utama -->
+    <link rel="stylesheet" href="style2.css">
+
+</head>
+<body>
+
+    <!-- Bar warna coklat paling atas -->
+    <div class="top-rectangle"></div>
+
+    <!-- HEADER LOGO -->
+   <header class="header">
+     <a href="landingpage.html">
+         <img src="HEADER.png" alt="Gobu Coffee Logo" class="logo-img">
+    </a>
+</header>
+
+    <!-- NAVBAR -->
+   <nav class="navbar">
+        <a href="page1.html" class="tes">KOPI</a>
+        <a href="page2.html" class="active">PRODUK</a>
+        <a href="page3.html" class="tes">TENTANG KAMI</a>
+    </nav>
+
+    <!-- PRODUK PERTAMA (100g) -->
+    <section class="product-section-100g">
+        <div class="product-container">
+
+            <!-- Gambar Produk -->
+            <div class="product-image-box">
+                <img src="Gobu KOPI.PNG" alt="Gobu Robusta 250g" class="prod-img"> 
+            </div>
+
+            <!-- Deskripsi Produk -->
+            <div class="product-details">
+                <h2>GOBU <span class="bold">Robusta 100G</span></h2>
+                <p>
+                    Gobu Robusta 100g dirancang dalam ukuran yang elegan dan praktis, ideal untuk kamu yang ingin membawa kualitas dalam setiap perjalanan. Meski ringkas, kopi ini tetap menghadirkan karakter robusta yang kuat, aromatik, dan berbody tebal. Pilihan tepat bagi mereka yang menginginkan fleksibilitas.
+                </p>
+                
+                <!-- Pilihan tipe gilingan -->
+                <span class="type-label1">Tipe Kopi</span>
+                <div class="grind-options">
+                    <button class="grind-btn dark">KASAR</button>
+                    <button class="grind-btn light">HALUS</button>
+                </div>
+
+                <!-- Harga produk -->
+                <div class="price1">Harga: <span id="price-100">12.000</span></div>
+
+                <!-- Counter jumlah pembelian -->
+                <div class="counter-box">
+                    <!-- Tombol minus -->
+                    <button class="counter-btn" onclick="changeQty100('qty100', -1, 12000, 'total100')">−</button>
+                    
+                    <!-- Menampilkan nilai jumlah -->
+                    <span id="qty100">0</span>
+
+                    <!-- Tombol tambah -->
+                    <button class="counter-btn" onclick="changeQty100('qty100', 1, 12000, 'total100')">+</button>
+                </div>
+
+                <!-- Total harga berdasarkan qty -->
+                <div class="total1">Total: Rp <span id="total100">0</span></div>
+
+                <!-- Tombol Pesanan -->
+                <div class="action-area right">
+                    <button class="buy-btn">Tambahkan Pesanan</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Pembatas antara produk -->
+<div class="pembatas"></div>
+
+
+    <!-- PRODUK KEDUA (250g) -->
+    <section class="product-section-250g">
+        <div class="product-container1">
+
+            <!-- Deskripsi Produk -->
+            <div class="product-details1">
+                <h2>GOBU <span class="bold">Robusta 250G</span></h2>
+                <p>
+                    Gobu Robusta 250g menawarkan pengalaman kopi robusta yang kaya, dengan aroma pekat dan karakter rasa yang penuh. Setiap biji dipilih dari panen terbaik dan di-roast secara presisi untuk menghasilkan cita rasa yang konsisten, intens, dan memuaskan. Sempurna bagi penikmat kopi yang menginginkan kualitas premium dalam setiap seduhan.
+                </p>
+
+                <!-- Pilihan tipe gilingan -->
+                <span class="type-label2">Tipe Kopi</span>
+                <div class="grind-options2">
+                    <button class="grind-btn dark">KASAR</button>
+                    <button class="grind-btn light">HALUS</button>
+                </div>
+
+                <!-- Harga -->
+                <div class="price2">Harga: <span id="price-250">21.000</span></div>
+
+                <!-- Counter pembelian -->
+                <div class="counter-box2">
+                    <button class="counter-btn" onclick="changeQty250('qty250', -1, 21000, 'total250')">−</button>
+                    <span id="qty250">0</span>
+                    <button class="counter-btn" onclick="changeQty250('qty250', 1, 21000, 'total250')">+</button>
+                </div>
+
+                <!-- Total harga -->
+                <div class="total2">Total: Rp <span id="total250">0</span></div>
+
+                <!-- Button pesan -->
+                <div class="action-area left">
+                    <button class="buy-btn">Tambahkan Pesanan</button>
+                </div>
+            </div>
+
+            <!-- Gambar Produk -->
+            <div class="product-image-box1">
+                <img src="GOBU 250G POSTER.png" alt="Gobu Robusta 100g" class="prod-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-item">
+            <img src="shopee.png" class="footer-icon">
+            <span>gobucoffee</span>
+        </div>
+    
+        <div class="footer-item">
+            <img src="instagram.png" class="footer-icon">
+            <span>@gobu.coffee</span>
+        </div>
+    
+        <div class="footer-item">
+            <img src="tokped.png" class="footer-icon">
+            <span>GobuCoffee</span>
+        </div>
+    </footer>
+    <a href="https://wa.me/6285278134976" target="_blank" class="wa-floating"> 
+         <img src="10464236.png" alt="Chat WhatsApp">
+    </a>
+
+    <!-- File JavaScript -->
+    <script src="animasi.js"></script>
+</body>
+</html>

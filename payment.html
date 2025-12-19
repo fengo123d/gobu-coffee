@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOBU Coffee - Pembayaran</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+
+    <div class="top-rectangle"></div>
+    <header class="header">
+        <img src="logo gobu.png" alt="Gobu Coffee Logo" class="logo-img">
+    </header>
+    <div class="pembatas"></div>
+
+    <div class="payment-wrapper">
+        
+        <div class="left-column">
+            
+            <div class="form-group">
+                <label>Nama Penerima</label>
+                <input type="text" id="nama" class="input-box">
+            </div>
+
+            <div class="form-group">
+                <label>No. Hp</label>
+                <input type="text" id="nohp" class="input-box">
+            </div>
+
+            <div class="form-group">
+                <label>Alamat</label>
+                <input type="text" id="alamat" class="input-box">
+            </div>
+
+            <div class="payment-section">
+                <div class="payment-header">PEMBAYARAN</div>
+                
+                <div class="payment-options">
+                    <label class="pay-card">
+                        <div class="pay-img-box"> <img src="madniri.png" alt=""></div> <span class="pay-name">MANDIRI</span>
+                        <input type="radio" name="payment_method" value="mandiri">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label class="pay-card">
+                        <div class="pay-img-box"><img src="bca.png" alt=""></div>
+                        <span class="pay-name">BCA</span>
+                        <input type="radio" name="payment_method" value="bca">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label class="pay-card">
+                        <div class="pay-img-box"><img src="bri.png" alt=""></div>
+                        <span class="pay-name">BRI</span>
+                        <input type="radio" name="payment_method" value="bri">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label class="pay-card">
+                        <div class="pay-img-box"><img src="cod.png" alt=""></div>
+                        <span class="pay-name">COD</span>
+                        <input type="radio" name="payment_method" value="cod">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-column">
+            <h2>Rincian</h2>
+
+            <div id="order-summary">
+                </div>
+
+            <div class="summary-footer">
+                <div class="total-row">
+                    <span>Total</span>
+                    <div class="total-column">
+                        <span class="total-label">harga</span>
+                        <span class="total-amount" id="grand-total">Rp 0</span>
+                    </div>
+                </div>
+                
+                <button class="btn-pesan" onclick="alert('Terima kasih! Pesanan diproses.')">Pesan Sekarang</button>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <div class="footer-item">
+            <img src="shopee.png" class="footer-icon">
+            <span>gobucoffee</span>
+        </div>
+        <div class="footer-item">
+            <img src="instagram.png" class="footer-icon">
+            <span>@gobu.coffee</span>
+        </div>
+        <div class="footer-item">
+            <img src="tokped.png" class="footer-icon">
+            <span>GobuCoffee</span>
+        </div>
+    </footer>
+
+    <script src="animasi.js"></script>
+
+</body>
+</html>

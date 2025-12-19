@@ -1,0 +1,324 @@
+* {
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #f4ebdc;
+        opacity: 0.7;
+    transition: opacity 0.5s ease-in-out;
+}
+body.loaded {
+    opacity: 1;
+}
+
+.top-rectangle {
+    width: 100%;
+    height: 45px;           
+    background: #4d2b14;    
+}
+
+.header {
+    display: flex;
+    justify-content: center;  
+    align-items: center;     
+    margin: 20px 0; 
+}
+
+.logo-text {
+    display: inline-block;
+    font-size: 60px;
+    letter-spacing: 8px;
+    margin: 0 20px;
+    font-weight: bold;
+}
+
+.logo-text span {
+    font-size: 14px;
+    letter-spacing: 5px;
+}
+
+/* NAVBAR */
+.navbar {
+    background: #e6d9c8;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;    
+    padding: 0;              
+    font-weight: bold;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #3a2c17;
+    padding: 15px 30px;      
+    background: #e6d9c8;
+    display: flex;           
+    font-size: 25px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0;      
+    transition: width 0.5s ease-in-out, background-color 0.5s ease-in-out; 
+}
+
+.navbar a.active {
+    background: #69452d;
+    color: white;
+    width: 1200px;
+}
+.navbar a.tes {
+    width: 750px;
+    font-weight: medium;
+}
+
+
+/* SECTION 1 */
+.section-one {
+    display: flex;
+    height: 606px;
+    background: #1b1b1b;
+    color: white;
+     justify-content: flex-start;
+    align-items: flex-start;     
+    gap: 10px;     
+}
+
+
+.text-box {
+    width: calc(100% - 485px);  
+    padding: 40px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.text-box h2 {
+    font-size: 38px;
+    margin-bottom: 8px;
+}
+
+.text-box h2 .bold {
+    font-weight: 700; 
+}
+
+.text-box h2 .regular {
+    font-weight: 400; 
+}
+
+
+.text-box p {
+    font-size: 22px;
+    margin-top: 0;
+    padding-right: 350px;
+    line-height: 1.4;
+}
+
+
+/* Cari bagian ini di style.css dan UPDATE isinya */
+
+.image-box {
+    width: 485px;            
+    height: 100%;
+    /* Hapus background-image url(...) jika ada, karena kita pakai <img> di HTML */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Penting biar ga bocor */
+}
+
+.main-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* INI KUNCINYA: Biar gambar menyesuaikan frame tanpa gepeng */
+    object-position: center;
+}
+
+/* SECTION TWO */
+.section-two {
+    background: #f4ebdc;
+    padding: 50px;
+    display: flex;
+    height: 200px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.section-two-left {
+    width: 60%;
+    padding-bottom: 60px;
+}
+.section-two-left h2 {
+    font-size: 38px;
+    margin-bottom: 8px;
+}
+
+.section-two-left .bold {
+    font-weight: 700;
+}
+
+.section-two-left h2 .regular {
+    font-weight: 400;
+}
+
+.section-two-right {
+    width: 35%;
+    text-align: right;
+}
+
+.middle-image {
+    width: 420px;
+     filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.35));
+}
+
+.section-two-left p {
+    font-size: 22px;
+    margin-top: 0;
+    padding-right: 350px;
+    line-height: 1.4;
+}
+
+/* BREW SECTION */
+.brew-section {
+    background: #4d2b14;
+    padding: 40px;
+    color: white;
+    text-align: left;
+}
+
+.brew-section h2 {
+    font-size: 38px;
+    margin-bottom: 8px;
+}
+
+.brew-section .bold {
+    font-weight: 700;   
+}
+
+.brew-section .regular {
+    font-weight: 400;  
+}
+
+.brew-grid {
+    display: flex;
+    justify-content: center;
+    gap: 65px;
+    margin-top: 30px;
+}
+
+.brew-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #6b3f22;
+    padding: 25px;
+    border-radius: 15px;
+    width: 235px;
+    color: #f4ebdc;
+}
+
+.brew-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+/* Tinggi h3 dibuat sama di semua card */
+.brew-card h3 {
+    margin: 0 0 10px 0 ;
+    text-align: center;
+    height: 50px;     
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.2;
+}
+
+/* Tinggi paragraf juga disamain */
+.brew-card p {
+    text-align: center;
+    height: 80px;   
+    display: flex;
+    align-items: flex-start;
+}
+
+
+/* FOOTER */
+.footer {
+    background: #f4ebdc;
+    padding: 25px 0;
+    display: flex;
+    justify-content: left;
+    padding-left: 50px;
+    gap: 60px;
+    font-size: 14px;
+    align-items: center;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-icon {
+    width: 28px;
+    height: auto;
+}
+
+/* --- ANIMASI SCROLL --- */
+
+/* 1. Animasi Umum (Fade Up) untuk Teks & Card */
+/* --- ANIMASI SCROLL --- */
+
+/* 1. Animasi Umum (Fade Up) untuk Teks & Card */
+.fade-up {
+    opacity: 0;
+    transform: translateY(80px); /* Jarak awal lebih jauh biar kerasa naiknya */
+    transition: all 0.8s ease-out; /* Transisi ini bikin pas KELUAR juga halus */
+}
+
+.fade-up.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* 2. Animasi Khusus Icon (Muter & Zoom) */
+.rotate-enter {
+    opacity: 0;
+    transform: rotate(-180deg) scale(0.5); /* Posisi Awal: Miring & Kecil */
+    transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Efek membal dikit */
+}
+
+.rotate-enter.active {
+    opacity: 1;
+    transform: rotate(0deg) scale(1); /* Posisi Akhir: Lurus & Normal */
+}
+
+/* Opsional: Jika card mau muncul satu per satu (Staggered) */
+.brew-card:nth-child(1) { transition-delay: 0.1s; }
+.brew-card:nth-child(2) { transition-delay: 0.3s; }
+.brew-card:nth-child(3) { transition-delay: 0.5s; }
+.brew-card:nth-child(4) { transition-delay: 0.7s; }
+
+.wa-floating {
+    position: fixed;
+    bottom: 50px;    /* jarak dari bawah */
+    right: 50px;       /* jarak dari kanan */
+    z-index: 9999;      /* biar selalu di atas */
+}
+
+.wa-floating img {
+    width: 100px;    
+    height: auto;
+    border-radius: 50%;
+    background-color: #69452d;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+}
+
+.wa-floating img:hover {
+    transform: scale(1.1);
+}

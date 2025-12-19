@@ -1,0 +1,272 @@
+/* Import Font & Basic setup dari style lama */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #f7f1e6; /* Warna background sama dengan page lain */
+    opacity: 0.7;
+    transition: opacity 0.5s ease-in-out;
+}
+
+body.loaded {
+    opacity: 1;
+}
+
+/* HEADER STYLE (Copy dari style.css biar konsisten) */
+.top-rectangle {
+    width: 100%;
+    height: 45px;
+    background: #4d2b14;
+}
+
+.header {
+    justify-content: left;
+    align-items: left;
+    margin: 20px ;
+}
+.pembatas {
+    width: 100%;
+    height: 10px; 
+    background: #1A1A1A; 
+    margin-top: -20px;
+}
+/* LAYOUT UTAMA */
+.payment-wrapper {
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    gap: 80px; /* Jarak antara kolom kiri dan kanan */
+}
+
+/* KOLOM KIRI (Form & Payment) */
+.left-column {
+    flex: 1.5; /* Lebih lebar dari kolom kanan */
+}
+
+/* INPUT FORM */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #000;
+}
+
+.input-box {
+    width: 100%;
+    border: 2px solid #000; /* Border hitam tebal sesuai gambar */
+    background: transparent;
+    padding: 10px;
+    font-size: 16px;
+    outline: none;
+}
+
+/* BAGIAN PEMBAYARAN */
+/* BAGIAN PEMBAYARAN */
+.payment-section {
+    margin-top: 30px;
+}
+
+/* Header Hitam "PEMBAYARAN" */
+.payment-header {
+    background-color: #1b1b1b;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 1px;
+    /* Margin bawah 0 supaya nempel sama kotak bawahnya */
+    margin-bottom: 0; 
+}
+
+/* Kotak Pembungkus Utama (Wadah Besar) */
+.payment-options {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #000; /* Garis pinggir kotak besar */
+    border-top: none;       /* Hilangkan garis atas biar nyatu sama Header */
+    background: #f7f1e6;
+}
+
+/* Baris Item Pembayaran (Mandiri, BCA, dll) */
+.pay-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;      /* Spasi dalam baris */
+    border-bottom: 2px solid #000; /* Garis pemisah antar item */
+    cursor: pointer;
+    position: relative;
+    transition: background 0.2s;
+}
+
+/* Hilangkan garis pemisah di item paling terakhir (COD) */
+.pay-card:last-child {
+    border-bottom: none;
+}
+
+/* Efek Hover (Opsional) */
+.pay-card:hover {
+    background-color: #ece4d5;
+}
+
+.pay-img-box {
+    width: 80px;      
+    height: 50px;   
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+}
+
+.pay-img-box img {
+    max-width: 85%;   
+    max-height: 85%;  
+    width: auto;     
+    height: auto;
+    object-fit: contain; 
+}
+
+.pay-name {
+    flex-grow: 1;
+    margin-left: 20px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+/* Custom Radio Button (Bulatan) */
+.pay-card input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 25px;
+    height: 25px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    background: transparent;
+}
+
+/* Saat Dipilih (Titik Hitam) */
+.pay-card input[type="radio"]:checked {
+    background-color: #000; 
+    box-shadow: inset 0 0 0 3px #f7f1e6; /* Efek ring putih di dalam */
+}
+
+
+/* KOLOM KANAN (Rincian) */
+.right-column {
+    flex: 1;
+    padding-top: 0px;
+}
+
+.right-column h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+/* Item Pesanan */
+.item-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 25px;
+    font-size: 18px;
+}
+
+.item-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-name {
+    font-weight: 700;
+}
+
+.item-detail {
+    font-size: 16px;
+    color: #333;
+}
+
+.item-price {
+    font-weight: 700;
+}
+
+/* Total & Tombol */
+.summary-footer {
+    margin-top: 100px; /* Jarak agak jauh ke bawah */
+}
+
+.total-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.total-column {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.total-label {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.btn-pesan {
+    width: 100%;
+    background-color: #1b1b1b;
+    color: white;
+    padding: 15px;
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-pesan:hover {
+    background-color: #333;
+}
+
+/* FOOTER (Sama seperti halaman lain) */
+.footer {
+    background: #f4ebdc;
+    padding: 25px 0;
+    display: flex;
+    justify-content: left;
+    padding-left: 50px;
+    gap: 60px;
+    font-size: 14px;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-icon {
+    width: 28px;
+    height: auto;
+}
